@@ -1,16 +1,25 @@
 import React from "react";
-import Typing from "react-typing-animation";
+import { render } from "react-dom";
+import ReactTyped from "react-typed";
+import "react-typed/dist/animatedCursor.css";
 
 export default class Title extends React.Component {
   render() {
     return (
       <div className="Title-Container">
-        <Typing speed={200} className="IntroText">
-          <span>Hi, my name is Furqan</span>
-        </Typing>
-        <Typing speed={150} className="SubText">
-          <span>Software Developer</span>
-        </Typing>
+        <span className="IntroText">
+          Hi, my name is Furqan Agwan
+        </span>
+        <br></br>
+        <ReactTyped
+          className="SubText"
+          strings={["a developer","a UI/UX designer","a sports fanatic","a techie","a gamer","a coffee addict"]}
+          typeSpeed={150}
+          backSpeed={100}
+          backDelay={200}
+          loop={true}
+          smartBackspace={true}>
+        </ReactTyped>
       </div>
     );
   }
