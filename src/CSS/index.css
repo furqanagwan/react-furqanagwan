@@ -1,0 +1,82 @@
+html {}
+
+body {
+	background-color: #FA3F3F;
+	height: 100%;
+	width: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+	overflow-x: hidden;
+}
+.App-Background {
+	height: auto;
+	width: auto;
+}
+.Page-Header {
+	position: absolute;
+	margin: 0;
+	height: 100px;
+	width: 100%;
+}
+.Pages-Icons{
+	position: absolute;
+	margin: 0;
+	left: 2%;
+	top: 5%;
+	color: white;
+  text-align: center;
+}
+.Pages-Icons img + img {
+	margin-left: 5px;
+}
+.Pages-Icons img:nth-child(2){
+	padding-bottom: 1.5px;
+}
+.Pages-Button {
+	position: absolute;
+	margin: 0;
+	right: 2%;
+	top: 15%;
+	font-family: Tahoma;
+	font-size: 15px;
+	color: white;
+  letter-spacing: 0;
+  text-align: center;
+}
+.Pages-Button a+a {
+	margin-left: 20px;
+}
+.Avatar-Container{
+		position: absolute;
+		margin: 0;
+    top: 25%;
+    width: 100%;
+		transform: translateY(-50%);
+
+		font-family: Tahoma;
+    color: white;
+    padding-left: 30px;
+    text-align: left;
+    user-select: none;
+}
+
+.Title-Container {
+	position: absolute;
+	top: 65%;
+	transform: translateY(-50%);
+	margin: 0;
+	height: 500px;
+	width: 100%;
+	font-family: Tahoma;
+	color: white;
+	padding-left: 30px;
+	text-align: left;
+	user-select: none;
+}
+.IntroText {
+	font-size: 75px;
+	padding-bottom: 20px;
+}
+.SubText {
+	font-size: 45px;
+}
